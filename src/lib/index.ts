@@ -3,8 +3,6 @@ import "./index.css";
 import type { Modal, ModalRoot as _ModalRoot } from "./modal/@type";
 import { MODAL_EVENT_TYPE } from "./modal/modal.const";
 
-export type ModalRoot<T = any> = _ModalRoot<T>;
-
 const modal: Modal = {
   open(component, ...args) {
     const option = args[0];
@@ -20,4 +18,6 @@ const modal: Modal = {
   },
 };
 
-export default modal;
+export default modal as Modal;
+export type ModalRoot<T = any> = _ModalRoot<T>;
+export { ModalContainer } from "./modal/modal.container";

@@ -1,8 +1,21 @@
 {
   "name": "@dev.waca/modal",
   "private": false,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "0.0.6",
+  "author": {
+    "name": "@dev.waca",
+    "email": "dev.waca@gmail.com",
+    "url": "https://github.com/wacav/waca-modal"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/modal.cjs.js",
+  "module": "./dist/modal.es.js",
+  "types": "./dist/modal.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
