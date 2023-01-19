@@ -1,0 +1,6 @@
+.dev-waca__react-modal--container-visible {
+  @apply fixed z-[999999] top-0 left-0 w-full h-full;
+}
+.dev-waca__react-modal--container-hidden {
+  @apply hidden;
+}
