@@ -50,5 +50,16 @@
     "url": "http://github.com/dev-waca/modal.git",
     "type": "git"
   },
-  "homepage": "http://github.com/dev-waca/modal.git"
+  "homepage": "http://github.com/dev-waca/modal.git",
+  "keywords": [
+    "react",
+    "modal",
+    "dialog",
+    "popup",
+    "component",
+    "ui",
+    "library",
+    "typescript",
+    "tailwindcss"
+  ]
 }
