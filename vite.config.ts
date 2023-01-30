@@ -36,14 +36,7 @@ export default defineConfig({
           react: "React",
         },
       },
-      external: [
-        "react",
-        "react-dom",
-        "postcss",
-        "tailwindcss",
-        "autoprefixer",
-        "cssnano",
-      ],
+      external: ["react", "react-dom", "tailwindcss"],
     },
   },
 });
