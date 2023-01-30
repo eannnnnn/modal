@@ -1,12 +1,13 @@
 # MODAL (react modal)
 
-![](https://img.shields.io/badge/react-aqua) ![](https://img.shields.io/badge/language-typescript-blue) [![npm version](https://badge.fury.io/js/@dev.waca%2Fmodal.svg)](https://badge.fury.io/js/@dev.waca%2Fmodal)
+![use react](https://img.shields.io/badge/react-aqua) ![use typescript](https://img.shields.io/badge/language-typescript-blue) [![npm version](https://badge.fury.io/js/@dev.waca%2Fmodal.svg)](https://badge.fury.io/js/@dev.waca%2Fmodal) ![npm publish](https://github.com/dev-waca/modal/actions/workflows/publish.yml/badge.svg)
 
 ---
 
 `react` 에서 사용 하려고 만든 `modal` 라이브러리
 
 ## Installation
+
 ```bash
 npm i @dev.waca/modal
 # OR ( use yarn )
@@ -16,6 +17,7 @@ pnpm i @dev.waca/modal
 ```
 
 ## Use
+
 ```typescript
 import { ModalContainer } from "@dev.waca/modal";
 import React from "react";
@@ -28,5 +30,4 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <ModalContainer />
   </React.StrictMode>
 );
-
 ```

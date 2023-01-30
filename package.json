@@ -1,27 +1,23 @@
 {
   "name": "@dev.waca/modal",
+  "type": "module",
   "private": false,
-  "version": "0.1.4",
-  "author": {
-    "name": "@dev.waca",
-    "email": "dev.waca@gmail.com",
-    "url": "https://github.com/dev-waca/modal"
+  "version": "0.1.5",
+  "main": "./dist/modal.umd.js",
+  "module": "./dist/modal.js",
+  "types": "./dist/modal.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/modal.d.ts",
+      "import": "./dist/modal.js",
+      "require": "./dist/modal.umd.cjs"
+    },
+    "./dist/style.css": "./dist/style.css"
   },
-  "repository": {
-    "url": "http://github.com/dev-waca/modal.git",
-    "type": "git"
-  },
-  "homepage": "http://github.com/dev-waca/modal.git",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "main": "./dist/modal.cjs.js",
-  "module": "./dist/modal.es.js",
-  "types": "./dist/modal.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -44,5 +40,15 @@
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
     "vite-plugin-dts": "^1.7.1"
-  }
+  },
+  "author": {
+    "name": "@dev.waca",
+    "email": "dev.waca@gmail.com",
+    "url": "https://github.com/dev-waca/modal"
+  },
+  "repository": {
+    "url": "http://github.com/dev-waca/modal.git",
+    "type": "git"
+  },
+  "homepage": "http://github.com/dev-waca/modal.git"
 }

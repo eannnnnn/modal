@@ -16,14 +16,26 @@ export default defineConfig({
       insertTypesEntry: true,
     }),
   ],
+  define: {
+    "process.env": {
+      NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+    },
+  },
   build: {
     target: "esnext",
     lib: {
       entry: resolve(__dirname, "src/lib/index.ts"),
-      formats: ["es", "cjs"],
-      fileName: (format) => `modal.${format}.js`,
+      name: "modal",
+      fileName: "modal",
     },
+
     rollupOptions: {
+      output: {
+        exports: "named",
+        globals: {
+          react: "React",
+        },
+      },
       external: [
         "react",
         "react-dom",
