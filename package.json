@@ -1,8 +1,7 @@
 {
   "name": "@dev.waca/modal",
-  "type": "module",
   "private": false,
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "./dist/modal.umd.js",
   "module": "./dist/modal.js",
   "types": "./dist/modal.d.ts",
